@@ -8,9 +8,9 @@
     <security-constraint>
         <display-name>Constraint1</display-name>
         <web-resource-collection>
-            <web-resource-name>Administrative Calendar</web-resource-name>
+            <web-resource-name>afs</web-resource-name>
             <description/>
-            <url-pattern>\*</url-pattern>
+            <url-pattern>/ControllerServlet</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <description/>
@@ -25,7 +25,7 @@
         </form-login-config>
     </login-config>
     <security-role>
-        <description>Administrador</description>
+        <description/>
         <role-name>admin</role-name>
     </security-role>
 </web-app>
