@@ -14,6 +14,7 @@
         <title>Month Select</title>
     </head>
     <body>
+        <%@ include file="WEB-INF/jspf/banner.jspf" %>
        <h1>Number of Month <jsp:getProperty name="servletData" property="month" /></h1>
         <%int d=0;%>
     <c:choose>
