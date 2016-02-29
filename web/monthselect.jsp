@@ -70,8 +70,9 @@
         </c:choose>
             <%
            out.println("dias del mes"+d);
-           
             %>
+            
+            
             <table border="1">
                 <thead>
                     <tr>
@@ -83,23 +84,25 @@
                         <th>F</th>
                         <th>S</th>
                     </tr>
+                 </thead> 
+                 <tr>
                     <%
-                    for(int i=1;i<=7;i++)
-                    {
-                        %>
-                    <tr>
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                        <th>4</th>
-                        <th>5</th>
-                        <th>6</th>
-                        <th>7</th>
-                    </tr>
-                    <%
-                    }
-                    %>
-                </thead>
+                       int i=1;
+                       int numd=0;
+                        while (i<=d){
+                          %>
+                          <td><% out.println(+i); i++; numd++;%></td>
+                              <% 
+                              if(numd==7){
+                                  numd=0;
+                                 %></tr><tr>
+                                <%}}%>
+                                    
+                   
+                            
+                      
+                        
+                       
                 
             </table>
 
