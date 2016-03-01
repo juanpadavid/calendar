@@ -1,13 +1,15 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<table border="2">
+
+<div class='tdbanner'>
+<table>
   
     <tbody>
         <tr>
-            <td><h2>Wellcome to my page</h2><br>
-            More Information in
-            Juan Pa David 
-            </td>
+            <td><img id="ban"src="img/banner.jpg" alt="Esta es una imagen" width="250" height="100"></td>
+            <td rowspan="2"><h1>My first page of Calendar</h1><br><h2>Juan Pablo David juanpadavid@gmail.com</h2></td>
+            <td><img id="ban"src="img/banner2.jpg" alt="Esta es una imagen" width="100" height="100"></td>
         </tr>
+        
     </tbody>
-</table>
+</table></div>

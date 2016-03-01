@@ -9,14 +9,18 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+       
+        <link href="css/Estilos.css" rel="stylesheet">
+        <title>Free Calendar</title>
     </head>
     <body>
         <%@ include file="WEB-INF/jspf/banner.jspf" %>
          <form action="ControllerServlet" method="POST">
         
-        <div>Which month do you want to see? </div>
-        <select name="month">
+        
+             <table class="tabcal">
+            <tr><td><label class='campoform'>Which month do you want to see? </label></td>
+                <td><select class="campoform" name="month">
             <option>Select your month</option>
             <option value="1">January</option>
             <option value="2">February</option>
@@ -30,8 +34,9 @@
             <option value="10">October</option>
             <option value="11">November</option>
             <option value="12">December</option>
-        </select>
-        <input type="submit" value="Submit" />
+                    </select></td></tr>
+            <tr><td colspan="2"><input class='btn' type="submit" value="Submit" /></td></tr>
+        </table>
         </form>
 
     </body>
