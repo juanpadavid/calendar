@@ -4,12 +4,12 @@
 <div class='tdbanner'>
 <table>
   
-    <tbody>
+    
         <tr>
-            <td><img id="ban"src="img/banner.jpg" alt="Esta es una imagen" width="250" height="100"></td>
+            <td><img id="ban"src="img/banner.jpg" alt="Esta es una imagen" width="230" height="100"></td>
             <td rowspan="2"><h1>My first page of Calendar</h1><br><h2>Juan Pablo David juanpadavid@gmail.com</h2></td>
             <td><img id="ban"src="img/banner2.jpg" alt="Esta es una imagen" width="100" height="100"></td>
         </tr>
         
-    </tbody>
+    
 </table></div>

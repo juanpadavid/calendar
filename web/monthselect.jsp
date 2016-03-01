@@ -16,66 +16,67 @@
     </head>
     <body>
         <%@ include file="WEB-INF/jspf/banner.jspf" %>
-       <h1>Number of Month <jsp:getProperty name="servletData" property="month" /></h1>
+        <div class="infm">
+       <h1>The selected month is </h1>
         <%int d=0;%>
     <c:choose>
         <c:when test="${param.month=='1'}">
-            January...<br>
+            <h1>January</h1>
             <%d=31;%>
         </c:when>
         <c:when test="${param.month=='2'}">
-            February...<br>
+            <h1>February</h1>
             <%d=29;%>
         </c:when>
         <c:when test="${param.month=='3'}">
-            March...<br>
+            <h1>March</h1>
             <%d=31;%>
         </c:when>
         <c:when test="${param.month=='4'}">
-            April...<br>
+            <h1>April</h1>
             <%d=30;%>
         </c:when>
         <c:when test="${param.month=='5'}">
-            May...<br>
+            <h1>May</h1>
             <%d=31;%>
         </c:when>
         <c:when test="${param.month=='6'}">
-            June...<br>
+            <h1>June</h1>
             <%d=30;%>
         </c:when>
         <c:when test="${param.month=='7'}">
-            July...<br>
+            <h1>July</h1>
             <%d=31;%>
         </c:when>
         <c:when test="${param.month=='8'}">
-            August...<br>
+            <h1>August</h1>
             <%d=31;%>
         </c:when>
         <c:when test="${param.month=='9'}">
-            September...<br>
+           <h1>September</h1>
             <%d=30;%>
         </c:when>
         <c:when test="${param.month=='10'}">
-            October...<br>
+            <h1>October</h1>
             <%d=31;%>
         </c:when>
         <c:when test="${param.month=='11'}">
-            November...<br>
+            <h1>November</h1>
             <%d=30;%>
         </c:when>
         <c:when test="${param.month=='12'}">
-            December...<br>
+            <h1>December</h1>
             <%d=31;%>
         </c:when>
         <c:otherwise>
         </c:otherwise>
         </c:choose>
             <%
-           out.println("dias del mes"+d);
+           out.println("<h2>and has "+ d +" days</h2>");
             %>
             
-            
-            <table border="1">
+            </div>
+            <table class="tabmon">
                 <thead>
                     <tr>
                         <th>S</th>
@@ -93,19 +94,13 @@
                        int numd=0;
                         while (i<=d){
                           %>
-                          <td><% out.println(+i); i++; numd++;%></td>
+                          <td class="tdmonth"><% out.println(+i); i++; numd++;%></td>
                               <% 
                               if(numd==7){
                                   numd=0;
                                  %></tr><tr>
                                 <%}}%>
                                     
-                   
-                            
-                      
-                        
-                       
-                
             </table>
 
            

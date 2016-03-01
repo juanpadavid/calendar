@@ -14,6 +14,7 @@ body{
 h1,h2{ 
     color: #161682;
     font-family: Helvetica, sans-serif;
+    text-align: center;
 }
 .alert{ 
     color: #7c9cbd;
@@ -23,23 +24,17 @@ h1,h2{
 h1{
     font-style: oblique;
 }
-p{
-    max-width: 50%;
-    margin: auto;
-    margin-top: 8%;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    color: #999999;
-    letter-spacing: 2px;
-
+.infm{
+    margin-top: 20px;
+    margin-left: 450px;
+    width: 450px;
 }
 hr{
     height: 2px;
     background:#999999;
     margin-bottom: 15px;
     margin-top: 15px;
-    box-shadow: 4px 2px 5px #575757;
+    box-shadow: 4px 2px 5px #7c9cbd;
 }
 
 th{
@@ -49,7 +44,18 @@ th{
     margin-left: 12px;
     
 }
-
+.tdmonth{
+       border-radius: 5px;
+       border:1px solid #7c9cbd;
+       color: #161682;
+       font-size: 18px
+       
+}
+.tabmon{
+    background-color: #fff;
+    margin-top: 10px;
+    margin-left: 565px;
+}
 .tdbanner{
     text-align: center;
     border:2px solid #6eabe3;

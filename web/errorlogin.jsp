@@ -15,7 +15,7 @@
     <body>
         <form action="j_security_check" method="POST">
            <table class="tablog">
-               <tr><td colspan="2"><h2 class="alert">Wrong user or password</h2><br> <h2>Enter your login & password</h2></td></tr>
+               <tr><td colspan="2"><h2 class="alert">Wrong!! Try again</h2><br> <h2>Enter your login & password</h2></td></tr>
                 <tr><td><img id="ban"src="img/305.png" alt="Login" width="50" height="50"></td>
                 <td><input class="campoform" type="text" name="j_username" required placeholder="User"/></td>
             <tr><td><img id="ban"src="img/304.png" alt="Login" width="50" height="50"></td>
